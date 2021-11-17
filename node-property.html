@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Property</title>
+</head>
+<body>
+    <ul id="menu">
+        <li id="first">First</li>
+        <li id="second">Second</li>
+        <li id="third">Third</li>
+    </ul>
+
+    <script>
+    // https://developer.mozilla.org/en-US/docs/Web/API/Node#properties
+
+    const menu = document.getElementById("menu");
+    console.info(menu);
+    console.info(menu.childNodes);
+
+    const first = document.getElementById("first");
+    console.info(first);
+    console.info(first.textContent);
+    console.info(first.previousSibling);
+    console.info(first.nextSibling);
+    </script>
+</body>
+</html>
